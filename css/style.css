@@ -92,8 +92,12 @@ img {
   color: var(--gold);
 }
 
-.navbar-brand svg {
+.navbar-brand svg,
+.navbar-brand img {
   flex-shrink: 0;
+  height: 36px;
+  width: auto;
+  display: block;
 }
 
 .nav-links {
