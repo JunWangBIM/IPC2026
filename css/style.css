@@ -316,22 +316,56 @@ img {
   font-size: 1.1rem;
 }
 
-/* ===== Attribution Block ===== */
-.attribution-block {
-  background: var(--off-white);
-  border-left: 4px solid var(--gold);
-  padding: 1.5rem 2rem;
+/* ===== Chairs Row ===== */
+.chairs-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
   margin: 2rem 0;
-  border-radius: 0 4px 4px 0;
+  justify-content: center;
 }
 
-.attribution-block p {
-  margin-bottom: 0.3rem;
+.chair-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: var(--off-white);
+  border-left: 4px solid var(--gold);
+  border-radius: 0 8px 8px 0;
+  padding: 1rem 1.25rem;
+  flex: 1 1 260px;
+  max-width: 340px;
+}
+
+.chair-card img {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 2px solid var(--gold);
+}
+
+.chair-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.chair-info strong {
+  color: var(--navy);
   font-size: 0.95rem;
 }
 
-.attribution-block strong {
-  color: var(--navy);
+.chair-info span {
+  font-size: 0.82rem;
+  color: var(--gray);
+}
+
+.chair-info .chair-role {
+  font-size: 0.8rem;
+  color: var(--gold);
+  font-weight: 600;
 }
 
 /* ===== Callout Box ===== */
@@ -441,21 +475,45 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.75rem;
-  max-width: 200px;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 220px;
+  height: 220px;
   text-align: center;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1.5rem 1.25rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.logo-item .logo-img-wrap {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .logo-item img,
 .logo-item svg {
-  max-height: 80px;
+  max-height: 100px;
+  max-width: 160px;
   width: auto;
+  object-fit: contain;
+}
+
+.logo-item .logo-img-wrap--dark {
+  background: #1a2744;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
 }
 
 .logo-item span {
   font-size: 0.85rem;
   color: var(--gray);
   font-weight: 500;
+  line-height: 1.4;
 }
 
 /* ===== Leadership Cards ===== */
