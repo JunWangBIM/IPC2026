@@ -503,6 +503,10 @@ img {
   object-fit: contain;
 }
 
+.logo-item .logo-img-wrap--wide img {
+  max-width: 100%;
+}
+
 .logo-item .logo-img-wrap--dark {
   background: #1a2744;
   border-radius: 8px;
